@@ -42,3 +42,48 @@ start n1=node(13),n2=node(8) create n1-[:FRIEND]->n2;
 start n1=node(13),n2=node(9) create n1-[:FRIEND]->n2;
 start n1=node(20),n2=node(1) create n1-[:FRIEND]->n2;
 COMMIT
+BEGIN
+create n={id:'1000', name:'Bumble Bee Foods 5K', category:'5K'};
+create n={id:'1001', name:'5K Zombie Run', category:'5K'};
+create n={id:'1002', name:'Shelter Island 5K Run', category:'5K'};
+create n={id:'1003', name:'New Me 5K & 1Mile Kids Run', category:'5K'};
+create n={id:'1004', name:'Finish Chelsea's Run 5K Run & Walk', category:'5K'};
+create n={id:'1005', name:'PLRC Jim Krause Memorial Bicycle Ride', category:'Cycling'};
+create n={id:'1006', name:'Templeton Wine & Roses Bike Ride', category:'Cycling'};
+create n={id:'1007', name:'Unddfeated EOD Bike Ride (Worldwide)', category:'Cycling'};
+create n={id:'1008', name:'Campagnoio GranFondo San Diego 2014', category:'Cycling'};
+create n={id:'1009', name:'Senorita Century - San Diego, Women's Bike Ride 2014', category:'Cycling'};
+create n={id:'1010', name:'La Jolla 10 Mile Relay', category:'Swimming'};
+create n={id:'1011', name:'Del Mar Relay Team Swim Meet', category:'Swimming'};
+create n={id:'1012', name:'San Diego Swim Meetup', category:'Swimming'};
+create n={id:'1013', name:'Coronado Freestyle Competition', category:'Swimming'};
+create n={id:'1014', name:'San Diego Backstroke Meetup', category:'Swimming'};
+create n={id:'1015', name:'San Diego Javascript Meetup', category:'Meetup'};
+create n={id:'1016', name:'San Diego Ruby Meetup Night', category:'Meetup'};
+create n={id:'1017', name:'Mac World 2014', category:'Meetup'};
+create n={id:'1018', name:'San Diego Startup Weekend 2014', category:'Meetup'};
+create n={id:'1019', name:'San Diego RefreshSD', category:'Meetup'};
+COMMIT
+BEGIN
+start n1=node(1),n2=node(1000) create n1-[:REGISTERED]->n2;
+start n1=node(1),n2=node(1001) create n1-[:REGISTERED]->n2;
+start n1=node(1),n2=node(1005) create n1-[:REGISTERED]->n2;
+start n1=node(2),n2=node(1000) create n1-[:REGISTERED]->n2;
+start n1=node(2),n2=node(1010) create n1-[:REGISTERED]->n2;
+start n1=node(2),n2=node(1009) create n1-[:REGISTERED]->n2;
+start n1=node(3),n2=node(1019) create n1-[:REGISTERED]->n2;
+start n1=node(3),n2=node(1017) create n1-[:REGISTERED]->n2;
+start n1=node(3),n2=node(1003) create n1-[:REGISTERED]->n2;
+start n1=node(10),n2=node(1008) create n1-[:REGISTERED]->n2;
+start n1=node(14),n2=node(1004) create n1-[:REGISTERED]->n2;
+start n1=node(11),n2=node(1000) create n1-[:REGISTERED]->n2;
+start n1=node(11),n2=node(1015) create n1-[:REGISTERED]->n2;
+start n1=node(12),n2=node(1001) create n1-[:REGISTERED]->n2;
+start n1=node(12),n2=node(1004) create n1-[:REGISTERED]->n2;
+start n1=node(12),n2=node(1016) create n1-[:REGISTERED]->n2;
+start n1=node(17),n2=node(1003) create n1-[:REGISTERED]->n2;
+start n1=node(13),n2=node(1003) create n1-[:REGISTERED]->n2;
+start n1=node(13),n2=node(1004) create n1-[:REGISTERED]->n2;
+start n1=node(20),n2=node(1011) create n1-[:REGISTERED]->n2;
+
+COMMIT
