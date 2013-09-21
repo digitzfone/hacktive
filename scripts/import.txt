@@ -1,0 +1,44 @@
+BEGIN
+create n={id:'1', name:'Amada Emory'};
+create n={id:'2', name:'Rana Seely'};
+create n={id:'3', name:'Detra Thatcher'};
+create n={id:'4', name:'Melda Reza'};
+create n={id:'5', name:'Shana Willems'};
+create n={id:'6', name:'Sharonda Peele'};
+create n={id:'7', name:'Dagny Agee'};
+create n={id:'8', name:'Tisa Woodman'};
+create n={id:'9', name:'Shelba Mutchler'};
+create n={id:'10', name:'Anderson Spagnola'};
+create n={id:'11', name:'Pamala Forward'};
+create n={id:'12', name:'Melva Fairchild'};
+create n={id:'13', name:'Antione Selman'};
+create n={id:'14', name:'Carmelia Cali'};
+create n={id:'15', name:'Fairy Daughtery'};
+create n={id:'16', name:'Stefany Mcamis'};
+create n={id:'17', name:'Kermit Meaney'};
+create n={id:'18', name:'Williemae Dossantos'};
+create n={id:'19', name:'Marth Sparling'};
+create n={id:'20', name:'Jarvis Noland'};
+COMMIT
+BEGIN
+start n1=node:node_auto_index(id='1'),n2=node:node_auto_index(id='11') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='1'),n2=node:node_auto_index(id='12') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='1'),n2=node:node_auto_index(id='13') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='2'),n2=node:node_auto_index(id='14') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='2'),n2=node:node_auto_index(id='15') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='2'),n2=node:node_auto_index(id='16') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='3'),n2=node:node_auto_index(id='17') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='3'),n2=node:node_auto_index(id='18') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='3'),n2=node:node_auto_index(id='19') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='10'),n2=node:node_auto_index(id='20') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='14'),n2=node:node_auto_index(id='1') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='11'),n2=node:node_auto_index(id='2') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='11'),n2=node:node_auto_index(id='3') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='12'),n2=node:node_auto_index(id='4') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='12'),n2=node:node_auto_index(id='5') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='12'),n2=node:node_auto_index(id='6') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='17'),n2=node:node_auto_index(id='7') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='13'),n2=node:node_auto_index(id='8') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='13'),n2=node:node_auto_index(id='9') create n1-[:FRIEND]->n2;
+start n1=node:node_auto_index(id='20'),n2=node:node_auto_index(id='1') create n1-[:FRIEND]->n2;
+COMMIT
