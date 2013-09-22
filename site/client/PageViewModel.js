@@ -8,6 +8,7 @@ PageViewModel = function(){
     self.interests = ko.observableArray([{id: '', name: ''}]);
     self.events_my_friends_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
     self.events_my_friends_with_a_similar_interest_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
+    self.afof = ko.observableArray([{ id: '', name: ''}]);
 
     self.initialize = function(userId) {
 
@@ -42,6 +43,11 @@ PageViewModel = function(){
             'params' : {}
         };
 
+        var foaf_query = {
+            'query': 'START u = node(' + userId + ') MATCH u -[:REGISTERED]-> e <-[:REGISTERED]- foaf -[:FRIEND]- () -[:FRIEND]- u RETURN DISTINCT foaf.id, foaf.name',
+            'params' : {}
+        };
+
 
         callApi(userQuery, self.populateUserData);
         callApi(friendsQuery, self.populateFriendData);
@@ -49,6 +55,7 @@ PageViewModel = function(){
         callApi(interestQuery, self.populateInterestData);
         callApi(my_friends_registered_query, self.eventsMyFriendsAreRegisteredForData);
         callApi(my_friends_with_similar_interest_query, self.myFriendsWithSimilarInterestData);
+        callApi(foaf_query, self.foafData);
     };
 
     self.populateUserData = function(userData) {
@@ -89,7 +96,14 @@ PageViewModel = function(){
             self.events_my_friends_with_a_similar_interest_are_registered_for.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
         };
     }
-}
+
+    self.foafData = function(foafData) {
+         self.foaf.removeAll();
+        for (var i = 0; i < foafData.data.length; i++) {
+            self.friends.push(new FriendModel(foafData.data[i][0], foafData.data[i][1]));
+        };
+
+    };
 
 $(function() {
     var viewModel = new PageViewModel();
