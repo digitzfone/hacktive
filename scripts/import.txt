@@ -19,8 +19,7 @@ create n={id:'17', name:'Kermit Meaney'};
 create n={id:'18', name:'Williemae Dossantos'};
 create n={id:'19', name:'Marth Sparling'};
 create n={id:'20', name:'Jarvis Noland'};
-COMMIT
-BEGIN
+
 start n1=node(1),n2=node(11) create n1-[:FRIEND]->n2;
 start n1=node(1),n2=node(12) create n1-[:FRIEND]->n2;
 start n1=node(1),n2=node(13) create n1-[:FRIEND]->n2;
@@ -41,8 +40,7 @@ start n1=node(17),n2=node(7) create n1-[:FRIEND]->n2;
 start n1=node(13),n2=node(8) create n1-[:FRIEND]->n2;
 start n1=node(13),n2=node(9) create n1-[:FRIEND]->n2;
 start n1=node(20),n2=node(1) create n1-[:FRIEND]->n2;
-COMMIT
-BEGIN
+
 create n={id:'21', name:'Bumble Bee Foods 5K', category:'5K'};
 create n={id:'22', name:'5K Zombie Run', category:'5K'};
 create n={id:'23', name:'Shelter Island 5K Run', category:'5K'};
@@ -63,8 +61,7 @@ create n={id:'37', name:'San Diego Ruby Meetup Night', category:'Meetup'};
 create n={id:'38', name:'Mac World 2014', category:'Meetup'};
 create n={id:'39', name:'San Diego Startup Weekend 2014', category:'Meetup'};
 create n={id:'40', name:'San Diego RefreshSD', category:'Meetup'};
-COMMIT
-BEGIN
+
 start n1=node(1),n2=node(21) create n1-[:REGISTERED]->n2;
 start n1=node(1),n2=node(22) create n1-[:REGISTERED]->n2;
 start n1=node(1),n2=node(25) create n1-[:REGISTERED]->n2;
@@ -85,4 +82,36 @@ start n1=node(17),n2=node(24) create n1-[:REGISTERED]->n2;
 start n1=node(13),n2=node(24) create n1-[:REGISTERED]->n2;
 start n1=node(13),n2=node(25) create n1-[:REGISTERED]->n2;
 start n1=node(20),n2=node(32) create n1-[:REGISTERED]->n2;
+
+create n={id:'41', name:'Running a 5K'};
+create n={id:'42', name:'Programming'};
+create n={id:'43', name:'Apple Products'};
+create n={id:'44', name:'Wine'};
+create n={id:'45', name:'Riding a road bike'};
+create n={id:'46', name:'Zombies'};
+create n={id:'47', name:'Womens Groups'};
+create n={id:'48', name:'Start  Ups'};
+create n={id:'49', name:'Comics'};
+create n={id:'50', name:'Playing the Drums'};
+
+start n1=node(41),n2=node(21) create n1-[:RELATED_TO]->n2;
+start n1=node(41),n2=node(22) create n1-[:RELATED_TO]->n2;
+start n1=node(41),n2=node(23) create n1-[:RELATED_TO]->n2;
+start n1=node(41),n2=node(24) create n1-[:RELATED_TO]->n2;
+start n1=node(41),n2=node(25) create n1-[:RELATED_TO]->n2;
+start n1=node(42),n2=node(36) create n1-[:RELATED_TO]->n2;
+start n1=node(42),n2=node(37) create n1-[:RELATED_TO]->n2;
+start n1=node(42),n2=node(38) create n1-[:RELATED_TO]->n2;
+start n1=node(42),n2=node(39) create n1-[:RELATED_TO]->n2;
+start n1=node(43),n2=node(38) create n1-[:RELATED_TO]->n2;
+start n1=node(44),n2=node(27) create n1-[:RELATED_TO]->n2;
+start n1=node(45),n2=node(26) create n1-[:RELATED_TO]->n2;
+start n1=node(45),n2=node(27) create n1-[:RELATED_TO]->n2;
+start n1=node(45),n2=node(28) create n1-[:RELATED_TO]->n2;
+start n1=node(45),n2=node(29) create n1-[:RELATED_TO]->n2;
+start n1=node(45),n2=node(30) create n1-[:RELATED_TO]->n2;
+start n1=node(46),n2=node(22) create n1-[:RELATED_TO]->n2;
+start n1=node(47),n2=node(30) create n1-[:RELATED_TO]->n2;
+start n1=node(48),n2=node(39) create n1-[:RELATED_TO]->n2;
+start n1=node(49),n2=node(40) create n1-[:RELATED_TO]->n2;
 COMMIT
