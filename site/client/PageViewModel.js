@@ -5,6 +5,8 @@ PageViewModel = function(){
     self.user = ko.observable({ id: '', name: ''});
     self.friends = ko.observableArray([{id: '', name: '' }]);
     self.events = ko.observableArray([{id: '', category: '', name: '' }]);
+    self.interests = ko.observableArray([{id: '', name: ''}]);
+
     self.initialize = function(userId) {
 
         // load initial user
@@ -16,15 +18,22 @@ PageViewModel = function(){
         var friendsQuery = {
             'query': 'START u = node(' + userId + ') MATCH u -[:FRIEND]- f RETURN f.id, f.name',
             'params' : {}
-        }
+        };
 
         var eventsQuery = {
             'query': 'START u = node(' + userId  + ') MATCH e <-[:REGISTERED]- u RETURN e.id, e.name, e.category',
             'params' : {}
-        }
+        };
+
+        var interestQuery = {
+            'query': 'START u = node (' + userId + ') MATCH i -[:INTERESTED_IN] - u RETURN i.id, i.name',
+            'params' : {}
+        };
+
         callApi(userQuery, self.populateUserData);
         callApi(friendsQuery, self.populateFriendData);
-        callApi(eventsQuery, self.populateEventData)
+        callApi(eventsQuery, self.populateEventData);
+        callApi(interestQuery, self.populateInterestData);
     };
 
     self.populateUserData = function(userData) {
@@ -45,6 +54,12 @@ PageViewModel = function(){
         };
     };
 
+    self.populateInterestData = function(interestData) {
+        self.interests.removeAll();
+        for (var i = 0; i < interestData.data.length; i++) {
+            self.interest.push(new InterestModel(interestData.data[i][0], interestData.data[i][1]));
+        };
+    };
 }
 
 $(function() {
