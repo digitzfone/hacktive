@@ -93,10 +93,10 @@ h3 {
   border: 1px solid #ebebeb;
   padding: 20px;
 }
-#graph {
+.graph {
   padding: 20px;
 }
-#graph img {
+.graph img {
   width: 100%;
   border: 1px solid #555555;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
