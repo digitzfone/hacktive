@@ -32,12 +32,14 @@ PageViewModel = function(){
     };
 
     self.populateFriendData = function(friendData) {
+        self.friends.removeAll();
         for (var i = 0; i < friendData.data.length; i++) {
             self.friends.push(new FriendModel(friendData.data[i][0], friendData.data[i][1]));
         };
     };
 
     self.populateEventData = function(eventData) {
+        self.events.removeAll();
         for (var i = 0; i < eventData.data.length; i++) {
             self.events.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
         };
