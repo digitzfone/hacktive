@@ -19,39 +19,36 @@ h4{font-size:12px;}
 
 #main.container{background-color: #fff; padding-bottom: 60px;}
 
+h1{
+  font-size: 30px;
+  margin:0;
+}
 
-  h1{
-    font-size: 30px;
-    margin:0;
-  }
+h3{
+  color:@gray-lighter;
+  background-color: @gray-light;
+  padding:5px;
+}
 
-  @groupGutter:5px;
 
-  .groupsList{
-    .make-row(@groupGutter);
-    margin-bottom:3px;
-  }
+@groupGutter:5px;
 
-  h3{
-    color:@gray-lighter;
-    background-color: @gray-light;
-    padding:5px;
-  }
+.list-item{
+  margin-bottom:3px;
+}
 
-  .groupListImage{
-    .make-sm-column(2, @groupGutter);
-  }
+.groupsList{
+  .make-row(@groupGutter);
+  margin-bottom:3px;
+}
 
-  .groupListName{
-    .make-sm-column(10, @groupGutter);
-  }
+.groupListImage{
+  .make-sm-column(2, @groupGutter);
+}
 
-  list-item{
-    line-height:40px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
+.groupListName{
+  .make-sm-column(10, @groupGutter);
+}
 
 
 #stats{

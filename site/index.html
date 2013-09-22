@@ -33,9 +33,9 @@
             </h3>
 
             <div data-bind="foreach: friends">
-                <a href="#" data-bind="click:$root.loadNewUser, attr:{'data-id': id}" data-id="" class="groupsList">
+                <a href="#" data-bind="click:$root.loadNewUser, attr:{'data-id': id}" data-id="" class="groupsList list-item">
                     <div class="groupListImage">
-                        <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
+                        <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" />
                     </div>
                     <div class="groupListName list-item" data-bind="text: name"></div>
                 </a>
@@ -45,7 +45,7 @@
                 Events
             </h3>
             <div data-bind="foreach: events">
-                <div class="groupsList">
+                <div class="groupsList list-item">
                     <div class="groupListImage">
                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/sports/' + parseInt($index())}" style="width:100%" />
                     </div>
@@ -65,16 +65,18 @@
                             graph here
                         </div>
                         <div id="recommended-friends" class="col-xs-4">
-                            <div id="foaf" data-bind="foreach: foaf">
-                                <div class="row">
+                            <h3>People with similar interests</h3>
+                            <div id="friends-similar-interests" data-bind="foreach: friends_with_similar_interests">
+                                <div class="row list-item">
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
                                     </div>
                                     <div class="col-xs-9 list-item" data-bind="text: name"></div>
                                 </div>
                             </div>
-                            <div id="friends-similar-interests" data-bind="foreach: friends_with_similar_interests">
-                                <div class="row">
+                            <h3>Friend of a friend</h3>
+                            <div id="foaf" data-bind="foreach: foaf">
+                                <div class="row list-item">
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
                                     </div>
