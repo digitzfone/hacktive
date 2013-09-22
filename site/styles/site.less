@@ -1,4 +1,5 @@
 @import "mixins.less";
+@import "variables.less";
 
 html{height:100%}
 
@@ -16,9 +17,40 @@ h4{font-size:12px;}
   border-radius:0px;
 }
 
-#main.container{background-color: #fff;}
+#main.container{background-color: #fff; padding-bottom: 60px;}
 
-#user{}
+#user{
+  h1{
+    font-size: 30px;
+    margin:0;
+  }
+
+  @groupGutter:5px;
+
+  .groupsList{
+    .make-row(@groupGutter);
+    margin-bottom:3px;
+  }
+
+  h3{
+    color:@gray-lighter;
+    background-color: @gray-light;
+    padding:5px;
+  }
+
+  .groupListImage{
+    .make-sm-column(2, @groupGutter);
+  }
+
+  .groupListName{
+    .make-sm-column(10, @groupGutter);
+    line-height:40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+}
 
 #stats{
   border:1px solid #c0c0c0;
