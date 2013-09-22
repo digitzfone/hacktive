@@ -34,12 +34,21 @@ h3{
 @groupGutter:5px;
 
 .list-item{
+  img{width:100%;}
   margin-bottom:3px;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &.link-item:hover{
+    background-color: #ebebeb;
+    cursor: pointer;
+    .border-right-radius(10px);
+  }
 }
 
 .groupsList{
   .make-row(@groupGutter);
-  margin-bottom:3px;
 }
 
 .groupListImage{

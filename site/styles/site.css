@@ -34,11 +34,23 @@ h3 {
 }
 .list-item {
   margin-bottom: 3px;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-item img {
+  width: 100%;
+}
+.list-item.link-item:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .groupsList {
   margin-left: -2.5px;
   margin-right: -2.5px;
-  margin-bottom: 3px;
 }
 .groupsList:before,
 .groupsList:after {

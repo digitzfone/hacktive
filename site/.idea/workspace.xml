@@ -28,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="34" selection-start="3793" selection-end="3793" vertical-scroll-proportion="0.6698762" vertical-offset="773" max-vertical-offset="1815">
+            <state line="14" column="43" selection-start="347" selection-end="347" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1815">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="site.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/site.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="20" selection-start="439" selection-end="439" vertical-scroll-proportion="-6.22" vertical-offset="229" max-vertical-offset="990">
+            <state line="44" column="20" selection-start="622" selection-end="622" vertical-scroll-proportion="0.6362339" vertical-offset="214" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -112,8 +112,8 @@
         <option value="$PROJECT_DIR$/client/models/user.js" />
         <option value="$PROJECT_DIR$/client/models/models.js" />
         <option value="$PROJECT_DIR$/client/PageViewModel.js" />
-        <option value="$PROJECT_DIR$/styles/site.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles/site.less" />
       </list>
     </option>
   </component>
@@ -430,22 +430,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/site.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="20" selection-start="439" selection-end="439" vertical-scroll-proportion="-6.22" vertical-offset="229" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="34" selection-start="3793" selection-end="3793" vertical-scroll-proportion="0.6698762" vertical-offset="773" max-vertical-offset="1815">
+        <state line="14" column="43" selection-start="347" selection-end="347" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1815">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/site.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="20" selection-start="622" selection-end="622" vertical-scroll-proportion="0.6362339" vertical-offset="214" max-vertical-offset="1125">
+          <folding />
         </state>
       </provider>
     </entry>

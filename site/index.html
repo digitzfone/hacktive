@@ -12,7 +12,7 @@
 <header>
     <div class="navbar navbar-inverse">
         <div class="container">
-            <a class="navbar-brand" href="#">ActiveGraph</a>
+            <a class="navbar-brand" href="/">ActiveGraph</a>
         </div>
     </div>
 </header>
@@ -33,12 +33,12 @@
             </h3>
 
             <div data-bind="foreach: friends">
-                <a href="#" data-bind="click:$root.loadNewUser, attr:{'data-id': id}" data-id="" class="groupsList list-item">
+                <div href="#" data-bind="click:$root.loadNewUser, attr:{'data-id': id}" data-id="" class="groupsList list-item link-item">
                     <div class="groupListImage">
                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" />
                     </div>
                     <div class="groupListName list-item" data-bind="text: name"></div>
-                </a>
+                </div>
             </div>
 
             <h3>
@@ -71,7 +71,7 @@
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
                                     </div>
-                                    <div class="col-xs-9 list-item" data-bind="text: name"></div>
+                                    <div class="col-xs-9" data-bind="text: name"></div>
                                 </div>
                             </div>
                             <h3>Friend of a friend</h3>
@@ -80,7 +80,7 @@
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
                                     </div>
-                                    <div class="col-xs-9 list-item" data-bind="text: name"></div>
+                                    <div class="col-xs-9" data-bind="text: name"></div>
                                 </div>
                             </div>
                         </div>
