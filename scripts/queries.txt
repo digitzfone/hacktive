@@ -6,6 +6,7 @@ RETURN e.name, e2.name, e2.category;
 #What are my friends registered for?
 START u = node(1)
 MATCH u -[:FRIEND]- f -[:REGISTERED]-> e
+WHERE NOT (u -[:REGISTERED]-> e)
 RETURN DISTINCT e.name, e.category;
 
 #What event categories are most popular among my friends?
@@ -33,4 +34,5 @@ RETURN u.name, i.name, f.name;
 #What events are friends with similar interests attending?
 START u = node(3)
 MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i
+WHERE NOT (u -[:REGISTERED]-> e)
 RETURN u.name, i.name, u2.name, e.name;
