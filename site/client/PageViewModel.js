@@ -13,7 +13,7 @@ PageViewModel = function(){
         callApi(options, self.populateUserData);
     };
 
-    self.user = ko.observable();
+    self.user = ko.observable({ id: '', name: ''});
 
     self.populateUserData = function(userData) {
         self.user(new UserModel(userData.data[0][0], userData.data[0][1]));
