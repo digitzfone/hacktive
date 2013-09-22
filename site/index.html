@@ -34,12 +34,12 @@
             </h3>
 
             <div data-bind="foreach: friends">
-                <div class="groupsList">
+                <a href="#" data-bind="click:$root.loadNewUser, attr:{'data-id': id}" data-id="" class="groupsList">
                     <div class="groupListImage">
                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
                     </div>
                     <div class="groupListName" data-bind="text: name"></div>
-                </div>
+                </a>
             </div>
 
             <h3>
@@ -50,11 +50,26 @@
                     <div class="groupListImage">
                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/sports/' + parseInt($index())}" style="width:100%" />
                     </div>
-                    <div class="groupListName" data-bind="text: name"></td>
+                    <div class="groupListName" data-bind="text: name"></div>
+                </div>
+            </div>
+        </div>
+        <div id="stats" class="col-xs-9">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#friends" data-toggle="tab">Friends</a></li>
+                <li><a href="#events" data-toggle="tab">Events</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="friends">
+                    friends
+                </div>
+                <div class="tab-pane" id="events">
+                    events
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
 

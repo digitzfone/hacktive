@@ -89,6 +89,11 @@ PageViewModel = function(){
             self.events_my_friends_with_a_similar_interest_are_registered_for.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
         };
     }
+
+    self.loadNewUser = function(item, elem){
+        var id = parseInt($(elem.currentTarget).attr('data-id'));
+        self.initialize(id);
+    }
 }
 
 $(function() {
