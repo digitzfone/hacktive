@@ -118,6 +118,12 @@ PageViewModel = function(){
         };
     };
 
+    self.loadNewUser = function(item, elem){
+        var id = parseInt($(elem.currentTarget).attr('data-id'));
+        self.initialize(id);
+    };
+}
+
 $(function() {
     var viewModel = new PageViewModel();
 

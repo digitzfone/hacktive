@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b6e90e9-a0c3-46b7-8e2e-a781875cb072" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/models/user.js" afterPath="$PROJECT_DIR$/client/models/models.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/PageViewModel.js" afterPath="$PROJECT_DIR$/client/PageViewModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/api.js" afterPath="$PROJECT_DIR$/client/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,20 +25,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="8" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.45301542" vertical-offset="637" max-vertical-offset="1350">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/models/models.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <folding />
+            <state line="36" column="79" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-0.9166667" vertical-offset="518" max-vertical-offset="1470">
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,19 +41,28 @@
       <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/site.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="307" selection-end="307" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="510">
+            <state line="57" column="12" selection-start="794" selection-end="794" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="540">
+              <folding>
+                <element signature="e#276#728#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/models/models.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="36" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageViewModel.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PageViewModel.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="16" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
-              <folding>
-                <marker date="1379827790000" expanded="true" signature="665:797" placeholder="{...}" />
-              </folding>
+            <state line="101" column="56" selection-start="4576" selection-end="4576" vertical-scroll-proportion="0.63414633" vertical-offset="1047" max-vertical-offset="1905">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,15 +71,6 @@
         <entry file="file://$PROJECT_DIR$/client/api.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="10" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ko-mapping.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/ko-mapping.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="111" selection-start="10109" selection-end="10109" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
               <folding />
             </state>
           </provider>
@@ -117,18 +108,18 @@
         <option value="$PROJECT_DIR$/client/viewModel.js" />
         <option value="$PROJECT_DIR$/client/api.js" />
         <option value="$PROJECT_DIR$/client/models/user.js" />
+        <option value="$PROJECT_DIR$/client/models/models.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/site.less" />
         <option value="$PROJECT_DIR$/client/PageViewModel.js" />
-        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="29" />
-    <option name="width" value="1400" />
-    <option name="height" value="860" />
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -292,7 +283,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="29" width="1400" height="860" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -300,7 +291,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -330,16 +321,18 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="53" selection-start="406" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
-          <folding>
-            <marker date="1379827790000" expanded="true" signature="665:797" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -360,21 +353,29 @@
     <entry file="file://$PROJECT_DIR$/styles/site.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
+          <folding>
+            <element signature="e#276#728#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="480">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/site.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
+          <folding>
+            <element signature="e#276#728#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -401,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/site.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="307" selection-end="307" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="27" selection-start="2486" selection-end="2498" vertical-scroll-proportion="-1.78" vertical-offset="1426" max-vertical-offset="11655">
@@ -415,25 +409,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
+    <entry file="file://$PROJECT_DIR$/styles/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
-          <folding>
-            <marker date="1379827790000" expanded="true" signature="665:797" placeholder="{...}" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9645">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/models/models.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
+        <state line="13" column="36" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/site.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="12" selection-start="794" selection-end="794" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="540">
+          <folding>
+            <element signature="e#276#728#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="8" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.45301542" vertical-offset="637" max-vertical-offset="1350">
+        <state line="36" column="79" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-0.9166667" vertical-offset="518" max-vertical-offset="1470">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="56" selection-start="4576" selection-end="4576" vertical-scroll-proportion="0.63414633" vertical-offset="1047" max-vertical-offset="1905">
           <folding />
         </state>
       </provider>

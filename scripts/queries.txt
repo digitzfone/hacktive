@@ -36,3 +36,9 @@ START u = node(3)
 MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i
 WHERE NOT (u -[:REGISTERED]-> e)
 RETURN u.name, i.name, u2.name, e.name;
+
+#Non-friends with similar interests
+START u = node(1)
+MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- f
+WHERE NOT (u -[:FRIEND]- f)
+RETURN u.name, f.name, i.name;
