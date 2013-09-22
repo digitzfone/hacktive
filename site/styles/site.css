@@ -66,16 +66,18 @@ h3 {
   min-height: 1px;
   padding-left: 2.5px;
   padding-right: 2.5px;
-  line-height: 40px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   .groupListName {
     float: left;
     width: 83.33333333333334%;
   }
+}
+list-item {
+  line-height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #stats {
   border: 1px solid #ebebeb;
