@@ -3,21 +3,21 @@
 PageViewModel = function(){
     self = this;
 
-    self.initialize = function(){
+    self.initialize = function() {
 
         // load initial user
         var options = {
-            'query' : 'START u = node(1) RETURN u.id, u.name',
-            'params' : {}
-        }
-        callApi(options, self.populateUserData)
-    }
+            'query': 'START u = node(1) RETURN u.id, u.name',
+            'params': {}
+        };
+        callApi(options, self.populateUserData);
+    };
 
     self.user = ko.observable();
 
-    self.populateUserData = function(userData){
-        self.user = new UserModel(userData.data[0][0], userData.data[0][1]);
-    }
+    self.populateUserData = function(userData) {
+        self.user(new UserModel(userData.data[0][0], userData.data[0][1]));
+    };
 }
 
 $(function() {
