@@ -52,6 +52,18 @@
                     <div class="groupListName list-item" data-bind="text: name"></div>
                 </div>
             </div>
+
+             <h3>
+                Interests
+            </h3>
+            <div data-bind="foreach: interests">
+                <div class="groupsList list-item">
+                    <!--<div class="groupListImage">
+                        <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/sports/' + parseInt($index())}" style="width:100%" />
+                    </div>-->
+                    <div class="groupListName list-item" data-bind="text: name"></div>
+                </div>
+            </div>
         </div>
         <div id="stats" class="col-xs-9">
             <ul class="nav nav-tabs">
