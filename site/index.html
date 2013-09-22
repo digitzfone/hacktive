@@ -87,7 +87,31 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="events">
-                    events
+                    <div class="row">
+                        <div id="graph2" class="col-xs-8">
+                            graph here
+                        </div>
+                        <div id="recommended-events" class="col-xs-4">
+                            <h3>Events my friends are attending</h3>
+                            <div id="events-friends-attending" data-bind="foreach: events_my_friends_are_registered_for">
+                                <div class="row list-item">
+                                    <div class="col-xs-3">
+                                        <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
+                                    </div>
+                                    <div class="col-xs-9" data-bind="text: name"></div>
+                                </div>
+                            </div>
+                            <h3>Targeted events friends with similar interests are attending</h3>
+                            <div id="events-similar" data-bind="foreach: events_my_friends_with_a_similar_interest_are_registered_for">
+                                <div class="row list-item">
+                                    <div class="col-xs-3">
+                                        <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
+                                    </div>
+                                    <div class="col-xs-9" data-bind="text: name"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
