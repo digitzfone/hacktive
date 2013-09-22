@@ -41,6 +41,18 @@
     </div>
 </div>
 
+<table>
+    <thead>
+        <tr><th>Friend Id</th><th>Friend Name</th></tr>
+    </thead>
+    <tbody data-bind="foreach: friends">
+        <tr>
+            <td data-bind="text: id"></td>
+            <td data-bind="text: name"></td>
+        </tr>
+    </tbody>
+</table>
+
 
 
 
