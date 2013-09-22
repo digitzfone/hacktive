@@ -1,5 +1,3 @@
-
-
 UserModel = function(userID, name) {
 
     var self = this;
@@ -14,4 +12,12 @@ FriendModel = function(friendId, name) {
 
 	self.id = ko.observable(friendId);
 	self.name = ko.observable(name);
-}
+};
+
+EventModel = function(eventId, name, category) {
+	var self = this;
+
+	self.id = ko.observable(eventId);
+	self.name = ko.observable(name);
+	self.category = ko.observable(category);
+};
