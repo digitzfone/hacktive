@@ -8,3 +8,10 @@ UserModel = function(userID, name) {
     self.name = ko.observable(name);
 
 };
+
+FriendModel = function(friendId, name) {
+	var self = this;
+
+	self.id = ko.observable(friendId);
+	self.name = ko.observable(name);
+}
