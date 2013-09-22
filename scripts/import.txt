@@ -1,5 +1,5 @@
 BEGIN
-create n={id:'1', name:'Amada Emory'};
+create n={id:'1', name:'Amanda Emory'};
 create n={id:'2', name:'Rana Seely'};
 create n={id:'3', name:'Detra Thatcher'};
 create n={id:'4', name:'Melda Reza'};

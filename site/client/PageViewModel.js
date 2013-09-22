@@ -9,6 +9,7 @@ PageViewModel = function(){
     self.events_my_friends_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
     self.events_my_friends_with_a_similar_interest_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
     self.foaf = ko.observableArray([{ id: '', name: ''}]);
+    self.friends_with_similar_interests = ko.observableArray([{id: '', name: ''}]);
 
     self.initialize = function(userId) {
 
@@ -48,6 +49,11 @@ PageViewModel = function(){
             'params' : {}
         };
 
+        var friends_with_similar_interests_query = {
+            'query': 'START u = node(1) MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- f WHERE NOT (u -[:FRIEND]- f) RETURN f.id, f.name',
+            'params' : {}
+        };
+
 
         callApi(userQuery, self.populateUserData);
         callApi(friendsQuery, self.populateFriendData);
@@ -56,6 +62,7 @@ PageViewModel = function(){
         callApi(my_friends_registered_query, self.eventsMyFriendsAreRegisteredForData);
         callApi(my_friends_with_similar_interest_query, self.myFriendsWithSimilarInterestData);
         callApi(foaf_query, self.foafData);
+        callApi(friends_with_similar_interests_query, self.friendsWithSimilarInterestsData);
     };
 
     self.populateUserData = function(userData) {
@@ -95,14 +102,20 @@ PageViewModel = function(){
         for (var i = 0; i < eventData.data.length; i++) {
             self.events_my_friends_with_a_similar_interest_are_registered_for.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
         };
-    }
+    };
 
     self.foafData = function(foafData) {
         self.foaf.removeAll();
         for (var i = 0; i < foafData.data.length; i++) {
             self.friends.push(new FriendModel(foafData.data[i][0], foafData.data[i][1]));
         };
+    };
 
+    self.friendsWithSimilarInterestsData = function(friendData) {
+        self.friends_with_similar_interests.removeAll();
+        for (var i = 0; i < friendData.data.length; i++) {
+            self.friends_with_similar_interests.push(new FriendModel(friendData.data[i][0], friendData.data[i][1]));
+        };
     };
 
     self.loadNewUser = function(item, elem){
