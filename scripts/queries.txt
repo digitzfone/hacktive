@@ -1,0 +1,26 @@
+#People who registered for this Event also registered for...
+START e = node(21)
+MATCH e <-[:REGISTERED]- u -[:REGISTERED]-> e2
+RETURN e.name, e2.name, e2.category;
+
+#What are my friends registered for?
+START u = node(1)
+MATCH u -[:FRIEND]- f -[:REGISTERED]-> e
+RETURN DISTINCT e.name, e.category;
+
+#What event categories are most popular among my friends?
+START u = node(1)
+MATCH u -[:FRIEND]- f -[:REGISTERED]-> e
+WITH DISTINCT e
+RETURN e.category, COUNT(e)
+
+#What events do I have in common with my friends?
+START u = node(1)
+MATCH u -[:REGISTERED]-> e <-[:REGISTERED]- f -[:FRIEND]- u
+WHERE u.id <> f.id
+RETURN e.name, u.name, f.name;
+
+#At what events could I meet a friend of a friend?
+START u = node(1)
+MATCH u -[:REGISTERED]-> e <-[:REGISTERED]- foaf -[:FRIEND]- () -[:FRIEND]- u
+RETURN DISTINCT e.name, u.name, foaf.name;
