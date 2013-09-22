@@ -6,6 +6,7 @@ PageViewModel = function(){
     self.friends = ko.observableArray([{id: '', name: '' }]);
     self.events = ko.observableArray([{id: '', category: '', name: '' }]);
     self.interests = ko.observableArray([{id: '', name: ''}]);
+    self.eventsMyFriendsAreRegisteredFor = ko.observableArray([{id: '', name: '', category: ''}]);
 
     self.initialize = function(userId) {
 
@@ -30,10 +31,17 @@ PageViewModel = function(){
             'params' : {}
         };
 
+        var myFriendsRegisteredQuery = {
+            'query': 'START u = node(' + userId + ') MATCH u -[:FRIEND]- f -[:REGISTERED]-> e RETURN DISTINCT e.id, e.name, e.category',
+            'params' : {}
+        };
+
+
         callApi(userQuery, self.populateUserData);
         callApi(friendsQuery, self.populateFriendData);
         callApi(eventsQuery, self.populateEventData);
         callApi(interestQuery, self.populateInterestData);
+        callApi(myFriendsRegisteredQuery, self.eventsMyFriendsAreRegisteredForData);
     };
 
     self.populateUserData = function(userData) {
@@ -58,6 +66,13 @@ PageViewModel = function(){
         self.interests.removeAll();
         for (var i = 0; i < interestData.data.length; i++) {
             self.interests.push(new InterestModel(interestData.data[i][0], interestData.data[i][1]));
+        };
+    };
+
+    self.eventsMyFriendsAreRegisteredForData = function(eventData) {
+        self.eventsMyFriendsAreRegisteredFor.removeAll();
+        for (var i = 0; i < eventData.data.length; i++) {
+            self.eventsMyFriendsAreRegisteredFor.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
         };
     };
 }
