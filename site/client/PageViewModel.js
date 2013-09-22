@@ -8,7 +8,7 @@ PageViewModel = function(){
     self.interests = ko.observableArray([{id: '', name: ''}]);
     self.events_my_friends_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
     self.events_my_friends_with_a_similar_interest_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
-    self.afof = ko.observableArray([{ id: '', name: ''}]);
+    self.foaf = ko.observableArray([{ id: '', name: ''}]);
 
     self.initialize = function(userId) {
 

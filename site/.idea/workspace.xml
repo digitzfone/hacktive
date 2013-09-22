@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b6e90e9-a0c3-46b7-8e2e-a781875cb072" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/PageViewModel.js" afterPath="$PROJECT_DIR$/client/PageViewModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/site.css" afterPath="$PROJECT_DIR$/styles/site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/site.less" afterPath="$PROJECT_DIR$/styles/site.less" />
     </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +31,12 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="79" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-0.9166667" vertical-offset="518" max-vertical-offset="1470">
+            <state line="73" column="56" selection-start="2916" selection-end="2916" vertical-scroll-proportion="-10.916667" vertical-offset="833" max-vertical-offset="1680">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,10 +45,8 @@
       <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/site.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="12" selection-start="794" selection-end="794" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="540">
-              <folding>
-                <element signature="e#276#728#0" expanded="false" />
-              </folding>
+            <state line="44" column="17" selection-start="578" selection-end="578" vertical-scroll-proportion="-7.42" vertical-offset="289" max-vertical-offset="990">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,7 +63,7 @@
       <file leaf-file-name="PageViewModel.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="56" selection-start="4576" selection-end="4576" vertical-scroll-proportion="0.63414633" vertical-offset="1047" max-vertical-offset="1905">
+            <state line="10" column="10" selection-start="541" selection-end="541" vertical-scroll-proportion="-1.3780488" vertical-offset="1167" max-vertical-offset="1905">
               <folding />
             </state>
           </provider>
@@ -109,8 +111,8 @@
         <option value="$PROJECT_DIR$/client/api.js" />
         <option value="$PROJECT_DIR$/client/models/user.js" />
         <option value="$PROJECT_DIR$/client/models/models.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/site.less" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/client/PageViewModel.js" />
       </list>
     </option>
@@ -291,7 +293,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17569445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -325,6 +327,7 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -353,9 +356,7 @@
     <entry file="file://$PROJECT_DIR$/styles/site.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding>
-            <element signature="e#276#728#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -366,6 +367,7 @@
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -373,9 +375,7 @@
     <entry file="file://$PROJECT_DIR$/styles/site.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding>
-            <element signature="e#276#728#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -425,27 +425,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/site.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="12" selection-start="794" selection-end="794" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="540">
-          <folding>
-            <element signature="e#276#728#0" expanded="false" />
-          </folding>
+        <state line="44" column="17" selection-start="578" selection-end="578" vertical-scroll-proportion="-7.42" vertical-offset="289" max-vertical-offset="990">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="79" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-0.9166667" vertical-offset="518" max-vertical-offset="1470">
+        <state line="73" column="56" selection-start="2916" selection-end="2916" vertical-scroll-proportion="-10.916667" vertical-offset="833" max-vertical-offset="1680">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="56" selection-start="4576" selection-end="4576" vertical-scroll-proportion="0.63414633" vertical-offset="1047" max-vertical-offset="1905">
+        <state line="10" column="10" selection-start="541" selection-end="541" vertical-scroll-proportion="-1.3780488" vertical-offset="1167" max-vertical-offset="1905">
           <folding />
         </state>
       </provider>

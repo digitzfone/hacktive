@@ -23,17 +23,17 @@ h4 {
   background-color: #fff;
   padding-bottom: 60px;
 }
-#user h1 {
+h1 {
   font-size: 30px;
   margin: 0;
 }
-#user .groupsList {
+.groupsList {
   margin-left: -2.5px;
   margin-right: -2.5px;
   margin-bottom: 3px;
 }
-#user .groupsList:before,
-#user .groupsList:after {
+.groupsList:before,
+.groupsList:after {
   content: " ";
   /* 1 */
 
@@ -41,27 +41,27 @@ h4 {
   /* 2 */
 
 }
-#user .groupsList:after {
+.groupsList:after {
   clear: both;
 }
-#user h3 {
+h3 {
   color: #eeeeee;
   background-color: #999999;
   padding: 5px;
 }
-#user .groupListImage {
+.groupListImage {
   position: relative;
   min-height: 1px;
   padding-left: 2.5px;
   padding-right: 2.5px;
 }
 @media (min-width: 768px) {
-  #user .groupListImage {
+  .groupListImage {
     float: left;
     width: 16.666666666666664%;
   }
 }
-#user .groupListName {
+.groupListName {
   position: relative;
   min-height: 1px;
   padding-left: 2.5px;
@@ -72,7 +72,7 @@ h4 {
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  #user .groupListName {
+  .groupListName {
     float: left;
     width: 83.33333333333334%;
   }

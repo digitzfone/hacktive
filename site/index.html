@@ -61,7 +61,21 @@
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="friends">
-                    friends
+                    <div class="row">
+                        <div id="graph" class="col-xs-8">
+                            graph here
+                        </div>
+                        <div id="recommended-friends" class="col-xs-4">
+                            <div id="afof" data-bind="foreach: afof">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
+                                    </div>
+                                    <div class="col-xs-9" data-bind="text: name"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane" id="events">
                     events
