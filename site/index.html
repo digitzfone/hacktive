@@ -27,6 +27,15 @@
                 Friends
             </h3>
 
+            <div data-bind="foreach: friends">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <img src="http://lorempixel.com/10/10/sports" />
+                    </div>
+                    <div class="col-xs-11" data-bind="text: name"></div>
+                </div>
+            </div>
+
             <h3>
                 Events
             </h3>
@@ -40,18 +49,6 @@
         </div>
     </div>
 </div>
-
-<table>
-    <thead>
-        <tr><th>Friend Id</th><th>Friend Name</th></tr>
-    </thead>
-    <tbody data-bind="foreach: friends">
-        <tr>
-            <td data-bind="text: id"></td>
-            <td data-bind="text: name"></td>
-        </tr>
-    </tbody>
-</table>
 
 
 
