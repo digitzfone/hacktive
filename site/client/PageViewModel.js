@@ -40,7 +40,7 @@ PageViewModel = function(){
         };
         //START u = node(1) MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i WHERE NOT (u -[:REGISTERED]-> e) RETURN DISTINCT e.id, e.name, e.category;
         var my_friends_with_similar_interest_query = {
-            'query': 'START u = node(' + userId + ') MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i WHERE NOT (u -[:REGISTERED]-> e) RETURN DISTINCT e.id, e.name, e.category',
+            'query': 'START u = node(' + userId + ') MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i WHERE NOT (u -[:REGISTERED]-> e) AND (u -[:FRIEND]- u2) RETURN DISTINCT e.id, e.name, e.category',
             'params' : {}
         };
 
