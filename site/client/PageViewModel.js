@@ -107,7 +107,7 @@ PageViewModel = function(){
     self.foafData = function(foafData) {
         self.foaf.removeAll();
         for (var i = 0; i < foafData.data.length; i++) {
-            self.friends.push(new FriendModel(foafData.data[i][0], foafData.data[i][1]));
+            self.foaf.push(new FriendModel(foafData.data[i][0], foafData.data[i][1]));
         };
     };
 
