@@ -41,6 +41,7 @@ h3 {
 }
 .list-item img {
   width: 100%;
+  border: 1px solid #555555;
 }
 .list-item.link-item:hover {
   background-color: #ebebeb;
@@ -91,4 +92,13 @@ h3 {
 #stats {
   border: 1px solid #ebebeb;
   padding: 20px;
+}
+#graph {
+  padding: 20px;
+}
+#graph img {
+  width: 100%;
+  border: 1px solid #555555;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
 }

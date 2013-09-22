@@ -65,7 +65,10 @@ PageViewModel = function(){
         callApi(friends_with_similar_interests_query, self.friendsWithSimilarInterestsData);
     };
 
+    self.currentUser = ko.observable();
+
     self.populateUserData = function(userData) {
+        self.currentUser(userData.data[0][0]);
         self.user(new UserModel(userData.data[0][0], userData.data[0][1]));
     };
 
