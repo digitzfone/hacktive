@@ -3,19 +3,66 @@
 <head>
     <title>Active Graph: Building the Active Network</title>
 
-    <link href="styles/bootstrap.min.css"/>
-    <link href="styles/site.css" />
+    <link href="styles/bootstrap.min.css" rel="stylesheet"/>
+    <link href="styles/site.css" rel="stylesheet" />
 
 </head>
 <body>
 
+<header>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+                <a class="navbar-brand" href="#">ActiveGraph</a>
+            </div>
+        </div>
+    </div>
+</header>
 
-<div class="row">
-    <div class="col-xs-2">
-        <h2 data-bind="text : user().name"></h2>
+<div id="main" class="container">
+    <div class="row">
+        <div id="user" class="col-xs-3 clearfix">
+            <h2 data-bind="text : user().name"></h2>
+
+            <h3>
+                Friends
+            </h3>
+
+            <div data-bind="foreach: friends">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <img src="http://lorempixel.com/10/10/sports" />
+                    </div>
+                    <div class="col-xs-11" data-bind="text: name"></div>
+                </div>
+            </div>
+
+            <h3>
+                Events
+            </h3>
+
+            <h3>
+                Interests
+            </h3>
+        </div>
+        <div id="stats" class="col-xs-9">
+            data here
+        </div>
     </div>
 </div>
 
+
+<table>
+    <thead>
+        <tr><th>Event Id</th><th>Event Name</th><th>Event Category</th></tr>
+    </thead>
+    <tbody data-bind="foreach: events">
+        <tr>
+            <td data-bind="text: id"></td>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: category"></td>
+        </tr>
+    </tbody>
+</table>
 
 
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -24,7 +71,7 @@
 
 <script src="client/api.js"></script>
 
-<script src="client/models/user.js"></script>
+<script src="client/models/models.js"></script>
 <script src="client/PageViewModel.js"></script>
 
 

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b6e90e9-a0c3-46b7-8e2e-a781875cb072" name="Default" comment="" />
+    <list default="true" id="4b6e90e9-a0c3-46b7-8e2e-a781875cb072" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/models/user.js" afterPath="$PROJECT_DIR$/client/models/models.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/PageViewModel.js" afterPath="$PROJECT_DIR$/client/PageViewModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/api.js" afterPath="$PROJECT_DIR$/client/api.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,20 +29,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="645">
+            <state line="64" column="8" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.45301542" vertical-offset="637" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageViewModel.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/models/models.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/site.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="16" selection-start="307" selection-end="307" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="510">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageViewModel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="53" selection-start="406" selection-end="425" vertical-scroll-proportion="0.36635005" vertical-offset="0" max-vertical-offset="737">
-              <folding />
+            <state line="5" column="16" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
+              <folding>
+                <marker date="1379827790000" expanded="true" signature="665:797" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,16 +70,7 @@
       <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="31" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/models/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="34" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="10" column="10" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="330">
               <folding />
             </state>
           </provider>
@@ -62,18 +79,16 @@
       <file leaf-file-name="ko-mapping.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/ko-mapping.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="111" selection-start="10109" selection-end="10109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="21" column="111" selection-start="10109" selection-end="10109" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/site.less">
+      <file leaf-file-name="mixins.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/mixins.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+            <state line="101" column="27" selection-start="2486" selection-end="2498" vertical-scroll-proportion="-1.78" vertical-offset="1426" max-vertical-offset="11655">
               <folding />
             </state>
           </provider>
@@ -86,6 +101,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -94,8 +117,9 @@
         <option value="$PROJECT_DIR$/client/viewModel.js" />
         <option value="$PROJECT_DIR$/client/api.js" />
         <option value="$PROJECT_DIR$/client/models/user.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/styles/site.less" />
         <option value="$PROJECT_DIR$/client/PageViewModel.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -106,7 +130,7 @@
     <option name="width" value="1400" />
     <option name="height" value="860" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -202,8 +226,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -215,6 +243,11 @@
         </serverdata>
       </server>
     </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -233,6 +266,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4b6e90e9-a0c3-46b7-8e2e-a781875cb072" name="Default" comment="" />
@@ -279,6 +329,43 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="53" selection-start="406" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
+          <folding>
+            <marker date="1379827790000" expanded="true" signature="665:797" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="31" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/ko-mapping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="111" selection-start="10109" selection-end="10109" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/site.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="480">
           <folding />
         </state>
@@ -300,46 +387,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/site.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/ko-mapping.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="111" selection-start="10109" selection-end="10109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/api.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="10" column="10" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="330">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/models/user.js">
+    <entry file="file://$PROJECT_DIR$/styles/site.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="25" column="16" selection-start="307" selection-end="307" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/styles/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="645">
+        <state line="101" column="27" selection-start="2486" selection-end="2498" vertical-scroll-proportion="-1.78" vertical-offset="1426" max-vertical-offset="11655">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/PageViewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="53" selection-start="406" selection-end="425" vertical-scroll-proportion="0.36635005" vertical-offset="0" max-vertical-offset="737">
+        <state line="5" column="16" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
+          <folding>
+            <marker date="1379827790000" expanded="true" signature="665:797" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/models/models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="8" selection-start="1554" selection-end="1554" vertical-scroll-proportion="0.45301542" vertical-offset="637" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
