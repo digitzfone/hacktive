@@ -6,7 +6,8 @@ PageViewModel = function(){
     self.friends = ko.observableArray([{id: '', name: '' }]);
     self.events = ko.observableArray([{id: '', category: '', name: '' }]);
     self.interests = ko.observableArray([{id: '', name: ''}]);
-    self.eventsMyFriendsAreRegisteredFor = ko.observableArray([{id: '', name: '', category: ''}]);
+    self.events_my_friends_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
+    self.events_my_friends_with_a_similar_interest_are_registered_for = ko.observableArray([{id: '', name: '', category: ''}]);
 
     self.initialize = function(userId) {
 
@@ -31,8 +32,13 @@ PageViewModel = function(){
             'params' : {}
         };
 
-        var myFriendsRegisteredQuery = {
-            'query': 'START u = node(' + userId + ') MATCH u -[:FRIEND]- f -[:REGISTERED]-> e RETURN DISTINCT e.id, e.name, e.category',
+        var my_friends_registered_query = {
+            'query': 'START u = node(' + userId + ') MATCH u -[:FRIEND]- f -[:REGISTERED]-> e WHERE NOT (u -[:REGISTERED]-> e) RETURN DISTINCT e.id, e.name, e.category',
+            'params' : {}
+        };
+        //START u = node(1) MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i WHERE NOT (u -[:REGISTERED]-> e) RETURN DISTINCT e.id, e.name, e.category;
+        var my_friends_with_similar_interest_query = {
+            'query': 'START u = node(' + userId + ') MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i WHERE NOT (u -[:REGISTERED]-> e) RETURN DISTINCT e.id, e.name, e.category',
             'params' : {}
         };
 
@@ -41,7 +47,8 @@ PageViewModel = function(){
         callApi(friendsQuery, self.populateFriendData);
         callApi(eventsQuery, self.populateEventData);
         callApi(interestQuery, self.populateInterestData);
-        callApi(myFriendsRegisteredQuery, self.eventsMyFriendsAreRegisteredForData);
+        callApi(my_friends_registered_query, self.eventsMyFriendsAreRegisteredForData);
+        callApi(my_friends_with_similar_interest_query, self.myFriendsWithSimilarInterestData);
     };
 
     self.populateUserData = function(userData) {
@@ -70,11 +77,18 @@ PageViewModel = function(){
     };
 
     self.eventsMyFriendsAreRegisteredForData = function(eventData) {
-        self.eventsMyFriendsAreRegisteredFor.removeAll();
+        self.events_my_friends_are_registered_for.removeAll();
         for (var i = 0; i < eventData.data.length; i++) {
-            self.eventsMyFriendsAreRegisteredFor.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
+            self.events_my_friends_are_registered_for.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
         };
     };
+
+    self.myFriendsWithSimilarInterestData = function(eventData) {
+        self.events_my_friends_with_a_similar_interest_are_registered_for.removeAll();
+        for (var i = 0; i < eventData.data.length; i++) {
+            self.events_my_friends_with_a_similar_interest_are_registered_for.push(new EventModel(eventData.data[i][0], eventData.data[i][1], eventData.data[i][2]));
+        };
+    }
 }
 
 $(function() {
