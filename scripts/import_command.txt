@@ -3,4 +3,4 @@ Windows
 Neo4jShell.bat -config "C:\neo4j-community-1.9.3\conf\neo4j.properties" -path "C:\neo4j-community-1.9.3\data\graph.db" -file "C:\Sites\hacktive\scripts\import.txt"
 
 
-neo4j-shell -config 
+neo4j-shell -config "/usr/local/neo4j/conf/neo4j.properties" -path "/usr/local/neo4j/data/graph.db" -file "/Users/ejohnson/Sites/hacktive/scripts/import.txt"
