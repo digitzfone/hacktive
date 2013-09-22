@@ -57,7 +57,7 @@ PageViewModel = function(){
     self.populateInterestData = function(interestData) {
         self.interests.removeAll();
         for (var i = 0; i < interestData.data.length; i++) {
-            self.interest.push(new InterestModel(interestData.data[i][0], interestData.data[i][1]));
+            self.interests.push(new InterestModel(interestData.data[i][0], interestData.data[i][1]));
         };
     };
 }
