@@ -34,7 +34,7 @@ h3{
 @groupGutter:5px;
 
 .list-item{
-  img{width:100%;}
+  img{width:100%; border:1px solid @gray}
   margin-bottom:3px;
   line-height: 40px;
   overflow: hidden;
@@ -67,3 +67,11 @@ h3{
   }
 }
 
+#graph{
+  padding:20px;
+  img{
+    width:100%;
+    border:1px solid @gray;
+    .box-shadow(2px 2px 5px rgba(0, 0, 0, 0.35))
+  }
+}
