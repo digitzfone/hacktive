@@ -24,3 +24,13 @@ RETURN e.name, u.name, f.name;
 START u = node(1)
 MATCH u -[:REGISTERED]-> e <-[:REGISTERED]- foaf -[:FRIEND]- () -[:FRIEND]- u
 RETURN DISTINCT e.name, u.name, foaf.name;
+
+#What interests do I share with my friends?
+START u = node(1)
+MATCH u -[:INTERESTED_IN]- i, u -[:FRIEND]- f -[:INTERESTED_IN]- i
+RETURN u.name, i.name, f.name;
+
+#What events are friends with similar interests attending?
+START u = node(3)
+MATCH u -[:INTERESTED_IN]- i -[:INTERESTED_IN]- u2 -[:REGISTERED]-> e -[:RELATED_TO]- i
+RETURN u.name, i.name, u2.name, e.name;
