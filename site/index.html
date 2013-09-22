@@ -77,8 +77,8 @@
                             <img data-bind="visible: currentUser() == '1'" src="images/amanda_foaf_recommendation.jpg" />
                         </div>
                         <div id="recommended-friends" class="col-xs-4">
-                            <h3 data-bind="visible: foaf().length != 0">Friend of a friend at the same event</h3>
-                            <div id="foaf" data-bind="foreach: foaf">
+                            <h3 data-bind="visible: friends_with_similar_interests().length != 0">People with similar interests</h3>
+                            <div id="friends-similar-interests" data-bind="foreach: friends_with_similar_interests">
                                 <div class="row list-item">
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
@@ -86,8 +86,8 @@
                                     <div class="col-xs-9" data-bind="text: name"></div>
                                 </div>
                             </div>
-                            <h3 data-bind="visible: friends_with_similar_interests().length != 0">People with similar interests</h3>
-                            <div id="friends-similar-interests" data-bind="foreach: friends_with_similar_interests">
+                            <h3 data-bind="visible: foaf().length != 0">Friend of a friend at the same event</h3>
+                            <div id="foaf" data-bind="foreach: foaf">
                                 <div class="row list-item">
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
@@ -104,8 +104,8 @@
                             <img data-bind="visible: currentUser() == '1'" src="images/amand-rec-events.jpg" />
                         </div>
                         <div id="recommended-events" class="col-xs-4">
-                            <h3 data-bind="visible: events_my_friends_are_registered_for().length != 0">Events my friends are attending</h3>
-                            <div id="events-friends-attending" data-bind="foreach: events_my_friends_are_registered_for">
+                             <h3 data-bind="visible: events_my_friends_with_a_similar_interest_are_registered_for().length != 0">Targeted events friends with similar interests are attending</h3>
+                            <div id="events-similar" data-bind="foreach: events_my_friends_with_a_similar_interest_are_registered_for">
                                 <div class="row list-item">
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
@@ -113,8 +113,8 @@
                                     <div class="col-xs-9" data-bind="text: name"></div>
                                 </div>
                             </div>
-                            <h3 data-bind="visible: events_my_friends_with_a_similar_interest_are_registered_for().length != 0">Targeted events friends with similar interests are attending</h3>
-                            <div id="events-similar" data-bind="foreach: events_my_friends_with_a_similar_interest_are_registered_for">
+                            <h3 data-bind="visible: events_my_friends_are_registered_for().length != 0">Events my friends are attending</h3>
+                            <div id="events-friends-attending" data-bind="foreach: events_my_friends_are_registered_for">
                                 <div class="row list-item">
                                     <div class="col-xs-3">
                                         <img src="" data-bind="attr:{src:'http://lorempixel.com/30/30/people/' + parseInt($index())}" style="width:100%" />
