@@ -22,7 +22,7 @@ EventModel = function(eventId, name, category) {
 	self.category = ko.observable(category);
 };
 
-InterestsModel = function(interestId, name) {
+InterestModel = function(interestId, name) {
 	var self = this;
 
 	self.id = ko.observable(interestId);
