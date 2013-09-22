@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="8" selection-start="245" selection-end="245" vertical-scroll-proportion="0.29453015" vertical-offset="0" max-vertical-offset="713">
+            <state line="14" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.29453015" vertical-offset="0" max-vertical-offset="713">
               <folding />
             </state>
           </provider>
@@ -142,6 +142,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -233,7 +234,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="245" selection-end="245" vertical-scroll-proportion="0.29453015" vertical-offset="0" max-vertical-offset="713">
+        <state line="14" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.29453015" vertical-offset="0" max-vertical-offset="713">
           <folding />
         </state>
       </provider>
